@@ -1,14 +1,14 @@
 .container-header{
-    display: flex;
-    width: 100%;
     align-items: center ;
+    display: flex;
     justify-content: space-around;
     padding: 1%;
+    width: 100%;
 }
 
 .container-header--logoBuscador{
-    display: flex;
     align-items: center;
+    display: flex;
 }
 
 .logo{
@@ -16,18 +16,17 @@
 }
 
 .header-buscador{
-    width: 40%;
+    border: none;
     font-size: 1rem;
     padding: 2%;
-    border: none;
+    width: 40%;
 }
 
 .header--login{
-    padding: 16px 60px;
-    border: 1px solid #2A7AE4;
+    border: 1px solid var(--color-celeste);
+    color: var(--color-celeste);
     cursor: pointer;
     font-size: 16px;
-    color: #2A7AE4;
+    padding: 16px 60px;
     text-decoration: none;
-    
 }

@@ -1,0 +1,13 @@
+:root{
+
+    --font-kanit: 'Kanit', sans-serif;
+
+    --color-celeste: #2A7AE4;
+
+    
+
+}
+
+body{
+    font-family: var(--font-kanit);
+}
