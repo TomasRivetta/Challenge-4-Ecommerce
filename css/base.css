@@ -4,7 +4,9 @@
 
     --color-celeste: #2A7AE4;
 
-    
+    --color-negro: black;
+
+    --gradiant-banner: linear-gradient(yellow,rgb(156, 190, 31));
 
 }
 

@@ -1,0 +1,28 @@
+.container-banner{
+    align-items: center;
+    background-image: url(../static/banner/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-titulo{
+    background: var(--gradiant-banner);
+    border-radius: 10px;
+    color: var(--color-negro);
+    font-size: 40px;
+    margin-top: 3%;
+}
+
+.banner--boton{
+    background: var(--gradiant-banner);
+    border-radius: 10px;
+    color: var(--color-negro);
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 2%;
+    margin-bottom: 40%;
+    padding: 16px 60px;
+    text-decoration: none;
+}
