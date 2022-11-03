@@ -1,0 +1,57 @@
+@media (max-width: 1024px) {
+    .banner-titulo{
+        font-size: 38px;
+    }
+    
+}
+
+@media (max-width: 950px) {
+
+    .container-main--productos{
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .header--login{
+        padding: 16px 40px;
+    }
+
+    .banner-titulo{
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 675px) {
+
+}
+
+@media (max-width: 480px) {
+    .header--login {
+        padding: 5px 40px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .header--login {
+        padding: 2px 40px;
+    }
+
+    .titulo-logo{
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .header--login {
+        padding: 1px 40px;
+    }
+
+}
+
