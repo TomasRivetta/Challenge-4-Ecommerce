@@ -41,6 +41,10 @@
     
 }
 
+.n1{
+    margin: 3%;
+}
+
 .producto-cuerpo{
     grid-area: card-cuerpo;
     display: grid;
@@ -81,4 +85,15 @@
     color: white;
     padding: 3%;
     border-radius: 5%;
+}
+
+
+/*-------------------*/
+
+.container__informacion{
+    display: flex;
+}
+
+.container__informacion--logo--info{
+    display: flex;
 }

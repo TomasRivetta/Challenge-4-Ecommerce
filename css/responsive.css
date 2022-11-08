@@ -22,15 +22,30 @@
         font-size: 30px;
     }
 
+    .container__informacion--logo--info{
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 675px) {
+    .container__informacion--logo{
+        width: 80%;
+    }
 
 }
 
 @media (max-width: 480px) {
     .header--login {
         padding: 5px 40px;
+    }
+
+    .n1{
+        width: 80%;
+    }
+
+    .container__informacion{
+        flex-direction: column;
     }
 
 }
