@@ -1,0 +1,18 @@
+.container__footer{
+    width: 100%;
+}
+
+.container__footer--autor{
+    text-align: center;
+}
+
+.container__footer--redes{
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo--git{
+    margin-right: 1%;
+}
