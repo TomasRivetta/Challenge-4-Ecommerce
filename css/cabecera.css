@@ -1,24 +1,24 @@
 .container-header{
-    align-items: center ;
     display: flex;
-    justify-content: space-around;
-    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
-.container-header--logoBuscador{
-    align-items: center;
-    display: flex;
+.container--descripcionTienda{
+    width: 33.33%;
+}
+
+.container--LogoTienda{
+    width: 33.33%;
 }
 
 .logo{
-    width: 15%;
+    width: 25%;
 }
 
-.header-buscador{
-    border: none;
-    font-size: 1rem;
-    padding: 2%;
-    width: 40%;
+.container-header--login{
+    width: 33.33%;
 }
 
 .header--login{

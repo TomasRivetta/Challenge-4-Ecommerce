@@ -1,4 +1,42 @@
+.container--marca{
+    margin: 2% 5%;
+}
 
+.container--titulo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+}
+
+.container-main--productos{
+
+    display: flex;
+    gap: 0.5%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titulo--seccion{
+    font-size: 30px;
+}
+
+.titulo--seccion--paraTodos{
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.container-producto{
+    margin-bottom: 3%;
+}
+
+.producto-cuerpo__titulo{
+    font-size: 13px;
+}
+
+.producto-boton{
+    margin-top: 3%;
+}
 
 /*-------------------*/
 
@@ -12,11 +50,6 @@
     display: flex;
     width: 60%;
 }
-
-.elemento--lista{
-    line-height: 80px;
-}
-
 .informacion--descripcion{
     text-decoration: none;
     color: #464646;

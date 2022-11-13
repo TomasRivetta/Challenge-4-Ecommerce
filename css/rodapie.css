@@ -13,6 +13,12 @@
     justify-content: center;
 }
 
+.logo--git,.logo-linkedin{
+    font-size: 40px;
+    /* padding: 3px;
+    border: 2px solid black;
+    border-radius: 25px; */
+}
 .logo--git{
     margin-right: 1%;
 }

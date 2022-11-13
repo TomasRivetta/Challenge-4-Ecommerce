@@ -1,0 +1,89 @@
+<section>
+    <div class="container__informacion">
+        <div class="container__informacion--logo--info">
+            <img class="container__informacion--logo" src="static/logo.png" />
+
+            <div class="container--informacion">
+                <ul>
+                    <li class="elemento--lista">
+                        <a class="informacion--descripcion" href="#">Quienes somos</a>
+                    </li>
+                    <li class="elemento--lista">
+                        <a class="informacion--descripcion" href="#">Politica de privacidad</a>
+                    </li>
+                    <li class="elemento--lista">
+                        <a class="informacion--descripcion" href="#">programa de fidelidad</a>
+                    </li>
+                    <li class="elemento--lista">
+                        <a class="informacion--descripcion" href="#">Nuestras Tiendas</a>
+                    </li>
+                    <li class="elemento--lista">
+                        <a class="informacion--descripcion" href="#">Quiero ser franquiciado</a>
+                    </li>
+                    <li class="elemento--lista">
+                        <a class="informacion--descripcion" href="#">Anuncie aqui</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container--formulario">
+            <h5 class="titulo">Hable con nosotros</h5>
+
+            <div class="contacto__formulario--container">
+                <form action="https://formsubmit.co/5b6fd4211321a00273dc24087636e148" method="POST"
+                    class="form">
+                    <div class="form__container">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Nombre"
+                                required name="name" />
+                            <label for="floatingInput">Nombre</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="subject" placeholder="Mensaje" required
+                                name="comments" />
+                            <label for="subject">Mensaje</label>
+                        </div>
+
+                        <div id="liveAlertPlaceholder"></div>
+                        <input type="submit" class="form__submit btn btn-primary" id="liveAlertBtn"
+                            value="Enviar Mensaje" />
+
+                        <!--La linea de abajo sirve para que cuando haga el captcha me reenvie a la pagina directamente-->
+                        <input type="hidden" name="_next"
+                            value="https://tomasrivetta.github.io/Challenge-4-Ecommerce/" />
+                        <!--La linea de abajo sirve para evitar el captcha-->
+                        <!--<input type="hidden" name="_captcha" value="false">-->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--MODAL POP UP PARA DESCRIPCIONES DE PRODUCTOS-->
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
