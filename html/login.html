@@ -65,10 +65,40 @@
     </header>
     
     <main>
+
+
+        <section>
+            <div class="container--formulario">
+                <h5 class="titulo">Iniciar Sesion</h5>
+    
+                <div class="contacto__formulario--container">
+                    <form method="POST"
+                        class="form">
+                        <div class="form__container">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="Escriba su correo electronico"
+                                    required/>
+                                <label for="floatingInput">Escriba su correo electronico</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="subject" placeholder="Escriba su contraseña" required/>
+                                <label for="subject">Escriba su contraseña</label>
+                            </div>
+    
+                            <div id="liveAlertPlaceholder"></div>
+                            <input type="submit" class="form__submit btn btn-primary" id="liveAlertBtn"
+                                value="Entrar" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
         <section>
             <div class="container__informacion">
                 <div class="container__informacion--logo--info">
-                    <img class="container__informacion--logo" src="static/logo.png" />
+                    <img class="container__informacion--logo" src="../static/logo.png" />
         
                     <div class="container--informacion">
                         <ul>
