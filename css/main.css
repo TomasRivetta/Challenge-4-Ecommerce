@@ -91,3 +91,36 @@
     margin-top: 4%;
 }
 
+
+/* -------------PAGINA DE LOGIN------------------------*/
+
+.formulario{
+    width: 100%;
+}
+
+.container--formulario-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5% 32%;
+}
+
+.tituloLogin{
+    text-align: center;
+    margin-bottom: 4%;
+    font-size: 20px;
+}
+
+.form__submitLogin,.form__submitRegistro{
+    width: 100%;
+}
+
+.form__submitLogin{
+    margin-top: 4%;
+}
+
+.tituloLoginOpcion{
+    text-align: center;
+    margin: 3%;
+    font-size: 20px;
+}
