@@ -49,7 +49,22 @@
 .container__informacion--logo--info{
     display: flex;
     width: 60%;
+    align-items: center;
+    justify-content: center;
 }
+
+.container__informacion--logo{
+    width: 50%;
+}
+
+.container--informacion{
+    line-height: 70px;
+}
+
+.titulo{
+    font-weight: bold;
+}
+
 .informacion--descripcion{
     text-decoration: none;
     color: #464646;

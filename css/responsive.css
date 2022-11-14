@@ -5,6 +5,14 @@
 }
 
 @media (max-width: 768px) {
+
+    .container__informacion--logo--info{
+        flex-direction: column;
+    }
+
+    .container--informacion{
+        line-height: 35px;
+    }
 }
 
 @media (max-width: 675px) {
@@ -21,6 +29,33 @@
         margin-bottom: 5%;
     }
 }
+
+@media (max-width: 425px) {
+
+    .container__informacion{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .contacto__formulario--container{
+        margin: 0 auto;
+    }
+
+    .container__informacion--logo--info{
+        margin-bottom: 3%;
+    }
+
+    .titulo{
+        text-align: center;
+    }
+
+    .container--formulario{
+        width: 100%;
+        margin-bottom: 3%;
+    }
+}
+
 
 @media (max-width: 375px) {
 }
