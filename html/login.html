@@ -68,28 +68,35 @@
 
 
         <section>
-            <div class="container--formulario">
-                <h5 class="titulo">Iniciar Sesion</h5>
-    
-                <div class="contacto__formulario--container">
-                    <form method="POST"
-                        class="form">
-                        <div class="form__container">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="Escriba su correo electronico"
-                                    required/>
-                                <label for="floatingInput">Escriba su correo electronico</label>
+            <div class="formulario">
+
+                <div class="container--formulario-login">
+
+                    <h5 class="tituloLogin">Iniciar Sesion</h5>
+        
+                    <div class="contacto__formulario--container--Login">
+                        <form method="POST"
+                            class="form">
+                            <div class="form__container">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="Escriba su correo electronico"
+                                        required/>
+                                    <label for="floatingInput">Escriba su correo electronico</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="subject" placeholder="Escriba su contraseña" required/>
+                                    <label for="subject">Escriba su contraseña</label>
+                                </div>
+        
+                                <div id="liveAlertPlaceholder"></div>
+                                <input type="submit" class="form__submitLogin btn btn-primary" id="liveAlertBtn"
+                                    value="Entrar" />
+                                <h2 class="tituloLoginOpcion"> - O - </h2>
+                                <a class="form__submitRegistro btn btn-dark" href="registro.html" role="button">Registrarse</a>
                             </div>
-                            <div class="form-floating">
-                                <input type="password" class="form-control" id="subject" placeholder="Escriba su contraseña" required/>
-                                <label for="subject">Escriba su contraseña</label>
-                            </div>
-    
-                            <div id="liveAlertPlaceholder"></div>
-                            <input type="submit" class="form__submit btn btn-primary" id="liveAlertBtn"
-                                value="Entrar" />
-                        </div>
-                    </form>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </section>
