@@ -54,6 +54,12 @@
         width: 100%;
         margin-bottom: 3%;
     }
+
+    .container--formulario-login{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 
 
