@@ -6,6 +6,14 @@
 
 @media (max-width: 768px) {
 
+    .banner-titulo{
+        font-size: 35px;
+    }
+
+    .banner--boton{
+        width: 30%;
+    }
+
     .container__informacion--logo--info{
         flex-direction: column;
     }
@@ -31,6 +39,14 @@
 }
 
 @media (max-width: 425px) {
+
+    .banner-titulo{
+        font-size: 30px;
+    }
+
+    .banner--boton{
+        width: 40%;
+    }
 
     .container__informacion{
         flex-direction: column;

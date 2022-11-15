@@ -8,8 +8,11 @@
 
     --color-negro: black;
 
-    --gradiant-banner: linear-gradient(yellow,rgb(156, 190, 31));
+    --color-blanco: white;
 
+
+    /* --gradiant-banner: linear-gradient(yellow,rgb(156, 190, 31)); */
+    --gradiant-banner: linear-gradient(#6c757d,#495057,#343a40);
 }
 
 body{
