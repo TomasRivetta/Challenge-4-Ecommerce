@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/cabecera.css" />
-    <link rel="stylesheet" href="../css/banner.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/rodapie.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
+
 
     <!--IMPORTACION DE FONT FAMILY-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -73,12 +73,11 @@
                     <h5 class="tituloLogin">Registrarse</h5>
         
                     <div class="contacto__formulario--container--Login">
-                        <h2 class="card__title">Completa tu registro</h2>
-
+                        <!-- <h2 class="card__title">Completa tu registro</h2> -->
                         <form method="POST"
                             class="form">
                             <fieldset>
-                                <legend class="form__label">Información básica</legend>
+                                <legend class="form__label"> --- Información básica ---</legend>
                                 <div class="form__container">
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control" placeholder="Nombre de Usuario" required name="name" id="name"/>
@@ -97,34 +96,33 @@
                                 </div>
                             </fieldset>
                             <fieldset>
-                                <legend class="form__label">Información personal</legend>
-                                <div class="input-container form-floating">
-                                    <input name="birth" id="birth" class="input" type="date" placeholder="Fecha de nacimento" required data-tipo="nacimiento">
+                                <legend class="form__label"> --- Información personal ---</legend>
+                                <div class="input-container form-floating container-tip">
+                                    <input name="birth" id="birth" class="input form-control" type="date" placeholder="Fecha de nacimento" required data-tipo="nacimiento">
                                     <label class="input-label" for="birth">Fecha de nacimiento</label>
-                                    <span class="input-message-error">Este campo no es valido</span>
+                                    <!-- <span class="input-message-error">Este campo no es valido</span> -->
                                 </div>
-                                <div class="input-container form-floating">
-                                    <input name="phoneNumber" id="phoneNumber" class="input" type="text" placeholder="Número telefónico" pattern="\d{10}" required maxlength="10" data-tipo="numero">
+                                <div class="input-container form-floating container-tip">
+                                    <input name="phoneNumber" id="phoneNumber" class="input form-control" type="text" placeholder="Número telefónico" pattern="\d{10}" required maxlength="10" data-tipo="numero">
                                     <label class="input-label" for="phoneNumber">Número telefónico</label>
-                                    <span class="input-message-error">Este campo no es valido</span>
+                                    <!-- <span class="input-message-error">Este campo no es valido</span> -->
                                 </div>
                             </fieldset>
                             <fieldset>
-                                <legend class="form__label">Dirección</legend>
-                                <div class="input-container form-floating">
-                                    <input name="cep" id="cep" class="input" type="text" placeholder="CEP" required pattern="[\s\S]{10,40}" data-tipo="direccion">
+                                <div class="input-container form-floating container-tip">
+                                    <input name="cep" id="cep" class="form-control input" type="text" placeholder="CEP" required pattern="[\s\S]{10,40}" data-tipo="direccion">
                                     <label class="input-label" for="cep">Dirección completa</label>
-                                    <span class="input-message-error">Este campo no es valido</span>
+                                    <!-- <span class="input-message-error">Este campo no es valido</span> -->
                                 </div>
-                                <div class="input-container form-floating">
-                                    <input name="city" id="city" class="input" type="text" placeholder="Ciudad" required pattern="[\s\S]{10,40}" data-tipo="ciudad">
+                                <div class="input-container form-floating container-tip">
+                                    <input name="city" id="city" class="input form-control" type="text" placeholder="Ciudad" required pattern="[\s\S]{10,40}" data-tipo="ciudad">
                                     <label class="input-label" for="city">Ciudad</label>
-                                    <span class="input-message-error">Este campo no es valido</span>
+                                    <!-- <span class="input-message-error">Este campo no es valido</span> -->
                                 </div>
-                                <div class="input-container form-floating">
-                                    <input name="state" id="state" class="input" type="text" placeholder="Estado" required pattern="[\s\S]{10,40}" data-tipo="estado">
+                                <div class="input-container form-floating container-tip" >
+                                    <input name="state" id="state" class="input form-control" type="text" placeholder="Estado" required pattern="[\s\S]{10,40}" data-tipo="estado">
                                     <label class="input-label" for="state">Estado</label>
-                                    <span class="input-message-error">Este campo no es valido</span>
+                                    <!-- <span class="input-message-error">Este campo no es valido</span> -->
                                 </div>
                             </fieldset>
                             <div id="liveAlertPlaceholder"></div>

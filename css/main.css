@@ -112,7 +112,7 @@
 .tituloLogin{
     text-align: center;
     margin-bottom: 4%;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .form__submitLogin,.form__submitRegistro{
@@ -127,4 +127,15 @@
     text-align: center;
     margin: 3%;
     font-size: 20px;
+}
+
+/* -------------PAGINA DE REGISTER------------------------*/
+
+.form__label{
+    margin: 3% 0;
+    font-size: 20px;
+}
+
+.container-tip{
+    margin-top: 4%;
 }
