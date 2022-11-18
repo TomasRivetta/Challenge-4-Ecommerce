@@ -4,9 +4,210 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pitusas Gloves</title>
+
+    <!--IMPORTACION DE ICONO-->
+    <link rel="shortcut icon" href="static/icon/favicon.ico" />
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!--IMPORTACIONES CSS-->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/cabecera.css" />
+    <link rel="stylesheet" href="../css/banner.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/rodapie.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <!--IMPORTACION DE FONT FAMILY-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet" />
+
 </head>
 <body>
+
+    <header>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4 container-header">
+
+                <div class="container--descripcionTienda">
+                    <h5 class="text-white h4">Pitusas FC</h5>
+                    <span class="text-muted">Todo lo que necesita un arquero.</span>
+                </div>
+
+                <div class="container--LogoTienda">
+                    <img class="logo" src="../static/logo.png" alt="logo de la pagina" />
+                </div>
+
+                <div class="container-header--login">
+                    <a href="../html/productos.html" class="header--login">Todos los productos</a>
+                </div>
+
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+
+            <section>
+                <div class="formulario">
     
+                    <div class="container--formulario-login">
+    
+                        <h5 class="tituloLogin">Agregar nuevo producto</h5>
+            
+                        <div class="contacto__formulario--container--Login">
+                            <!-- <h2 class="card__title">Completa tu registro</h2> -->
+                            <form method="POST"
+                                class="form">
+                                <fieldset>
+
+                                    <div class="form__container">
+
+                                        <div class="mb-3">
+                                            <label for="formFile" class="form-label">Imagen del producto</label>
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
+
+                                        <div>
+
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Categoria</option>
+                                                <option value="1">Guantes</option>
+                                                <option value="2">Pantalones | Buzos | Remeras</option>
+                                                <option value="3">Accesorios</option>
+                                            </select>
+
+                                        </div>
+
+                                        <div class="form-floating mb-3 container__nombre--Producto">
+                                            <input type="text" class="form-control" placeholder="Nombre del producto" required name="name" id="name"/>
+                                            <label for="name">Nombre del producto</label>
+                                        </div>
+
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" placeholder="Precio del producto" required name="precio" id="precio"/>
+                                            <label for="precio">Precio del producto</label>
+                                        </div>
+
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descripcion del producto"></textarea>
+                                            <label for="exampleFormControlTextarea1" class="form-label">Descripcion del producto</label>
+                                        </div>
+                                        
+                                    </div>
+
+                                </fieldset>
+                                <div id="liveAlertPlaceholder"></div>
+                                <input type="submit" class="form__submitLogin btn btn-primary" id="liveAlertBtn"
+                                value="Agregar producto"/>
+                            </form>
+                        </div>
+    
+                    </div>
+                </div>
+            </section>
+            
+        </section>
+
+        <section>
+            <div class="container__informacion">
+                <div class="container__informacion--logo--info">
+                    <img class="container__informacion--logo" src="../static/logo.png" />
+
+                    <div class="container--informacion">
+                        <ul>
+                            <li class="elemento--lista">
+                                <a class="informacion--descripcion" href="#">Quienes somos</a>
+                            </li>
+                            <li class="elemento--lista">
+                                <a class="informacion--descripcion" href="#">Politica de privacidad</a>
+                            </li>
+                            <li class="elemento--lista">
+                                <a class="informacion--descripcion" href="#">programa de fidelidad</a>
+                            </li>
+                            <li class="elemento--lista">
+                                <a class="informacion--descripcion" href="#">Nuestras Tiendas</a>
+                            </li>
+                            <li class="elemento--lista">
+                                <a class="informacion--descripcion" href="#">Quiero ser franquiciado</a>
+                            </li>
+                            <li class="elemento--lista">
+                                <a class="informacion--descripcion" href="#">Anuncie aqui</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container--formulario">
+                    <h5 class="titulo">Hable con nosotros</h5>
+
+                    <div class="contacto__formulario--container">
+                        <form action="https://formsubmit.co/5b6fd4211321a00273dc24087636e148" method="POST"
+                            class="form">
+                            <div class="form__container">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="Nombre"
+                                        required name="name" />
+                                    <label for="floatingInput">Nombre</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Mensaje" required
+                                        name="comments" />
+                                    <label for="subject">Mensaje</label>
+                                </div>
+
+                                <div id="liveAlertPlaceholder"></div>
+                                <input type="submit" class="form__submit btn btn-primary" id="liveAlertBtn"
+                                    value="Enviar Mensaje" />
+
+                                <!--La linea de abajo sirve para que cuando haga el captcha me reenvie a la pagina directamente-->
+                                <input type="hidden" name="_next"
+                                    value="https://tomasrivetta.github.io/Challenge-4-Ecommerce/" />
+                                <!--La linea de abajo sirve para evitar el captcha-->
+                                <!--<input type="hidden" name="_captcha" value="false">-->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+
+        <div class="container__footer">
+            <h5 class="container__footer--autor">Desarrollado por Tomas Rivetta</h5>
+            <div class="container__footer--redes">
+                <a class="logo--git" href="https://github.com/TomasRivetta/Challenge-4-Ecommerce" target="_blank">
+                    <i class="bi-github" role="img" aria-label="GitHub"></i>
+                </a>
+                <a class="logo-linkedin" href="https://www.linkedin.com/in/tomasrivetta-fullstack/" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+    </footer>
 </body>
 </html>
