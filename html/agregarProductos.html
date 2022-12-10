@@ -78,39 +78,47 @@
                         <div class="contacto__formulario--container--Login">
                             <!-- <h2 class="card__title">Completa tu registro</h2> -->
                             <form action=""
-                                class="form">
+                                class="form" data-form>
                                 <fieldset>
 
                                     <div class="form__container">
 
                                         <div class="mb-3">
-                                            <label for="formFile" class="form-label">Imagen del producto</label>
-                                            <input class="form-control" type="file" id="formFile">
+                                            <label for="formFileMultiple" class="form-label">Imagen 1 del producto</label>
+                                            <input class="form-control" type="file" id="formFileMultiple" multiple data-img>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="imagen2" class="form-label">Imagen 2 del producto</label>
+                                            <input class="form-control" type="file" id="imagen2" multiple data-imgDos>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="imagen3" class="form-label">Imagen 3 del producto</label>
+                                            <input class="form-control" type="file" id="imagen3" multiple data-imgTres>
                                         </div>
 
                                         <div>
 
-                                            <select class="form-select" aria-label="Default select example">
+                                            <select class="form-select" aria-label="Default select example" data-categoria>
                                                 <option selected>Categoria</option>
-                                                <option value="1">Guantes</option>
-                                                <option value="2">Pantalones | Buzos | Remeras</option>
-                                                <option value="3">Accesorios</option>
+                                                <option value="Guantes">Guantes</option>
+                                                <option value="ropa">Pantalones | Buzos | Remeras</option>
+                                                <option value="accesorios">Accesorios</option>
                                             </select>
 
                                         </div>
 
                                         <div class="form-floating mb-3 container__nombre--Producto">
-                                            <input type="text" class="form-control" placeholder="Nombre del producto" required name="name" id="name" data-form-input/>
+                                            <input type="text" class="form-control" placeholder="Nombre del producto" required name="name" id="name" data-form-input maxlength="30"/>
                                             <label for="name">Nombre del producto</label>
                                         </div>
 
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" placeholder="Precio del producto" required name="precio" id="precio"/>
+                                            <input type="text" class="form-control" placeholder="Precio del producto" required name="precio" id="precio" data-precio/>
                                             <label for="precio">Precio del producto</label>
                                         </div>
 
                                         <div class="form-floating mb-3">
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descripcion del producto"></textarea>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descripcion del producto" data-descripcion></textarea>
                                             <label for="exampleFormControlTextarea1" class="form-label">Descripcion del producto</label>
                                         </div>
                                         
@@ -118,7 +126,7 @@
 
                                 </fieldset>
                                 
-                                <button type="submit" class="btnCreate" data-form-btn>
+                                <button type="submit" class="btnCreate btn-primary btn" data-form-btn>
                                     Agregar <i class="fas fa-plus-circle"></i>
                                 </button>
                             </form>
@@ -210,5 +218,9 @@
         </div>
 
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../js/registroProducto.js" type="module"></script>
 </body>
 </html>

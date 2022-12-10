@@ -75,58 +75,28 @@
                     <div class="contacto__formulario--container--Login">
                         <!-- <h2 class="card__title">Completa tu registro</h2> -->
                         <form method="POST"
-                            class="form">
+                            class="form" data-form>
                             <fieldset>
                                 <legend class="form__label"> --- Información básica ---</legend>
                                 <div class="form__container">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" placeholder="Nombre de Usuario" required name="name" id="name"/>
+                                        <input type="text" class="form-control" placeholder="Nombre de Usuario" required name="name" id="name" data-nombre/>
                                         <label for="name">Nombre de Usuario</label>
                                     </div>
                                     <div class="form-floating mb-3">
                                         <input type="email" class="form-control" id="floatingInput" placeholder="Escriba su correo electronico"
-                                            required/>
-                                        <label for="floatingInput">Escriba su correo electronico</label>
+                                            required data-email/>
+                                        <label for="floatingInputt">Escriba su correo electronico</label>
                                     </div>
-                                    <div class="form-floating">
-                                        <input type="password" class="form-control" id="subject" placeholder="Escriba su contraseña" required/>
-                                        <label for="subject">Escriba su contraseña</label>
-                                    </div>
-                                    
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <legend class="form__label"> --- Información personal ---</legend>
-                                <div class="input-container form-floating container-tip">
-                                    <input name="birth" id="birth" class="input form-control" type="date" placeholder="Fecha de nacimento" required data-tipo="nacimiento">
-                                    <label class="input-label" for="birth">Fecha de nacimiento</label>
-                                    <!-- <span class="input-message-error">Este campo no es valido</span> -->
-                                </div>
-                                <div class="input-container form-floating container-tip">
-                                    <input name="phoneNumber" id="phoneNumber" class="input form-control" type="text" placeholder="Número telefónico" pattern="\d{10}" required maxlength="10" data-tipo="numero">
-                                    <label class="input-label" for="phoneNumber">Número telefónico</label>
-                                    <!-- <span class="input-message-error">Este campo no es valido</span> -->
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <div class="input-container form-floating container-tip">
-                                    <input name="cep" id="cep" class="form-control input" type="text" placeholder="CEP" required pattern="[\s\S]{10,40}" data-tipo="direccion">
-                                    <label class="input-label" for="cep">Dirección completa</label>
-                                    <!-- <span class="input-message-error">Este campo no es valido</span> -->
-                                </div>
-                                <div class="input-container form-floating container-tip">
-                                    <input name="city" id="city" class="input form-control" type="text" placeholder="Ciudad" required pattern="[\s\S]{10,40}" data-tipo="ciudad">
-                                    <label class="input-label" for="city">Ciudad</label>
-                                    <!-- <span class="input-message-error">Este campo no es valido</span> -->
-                                </div>
-                                <div class="input-container form-floating container-tip" >
-                                    <input name="state" id="state" class="input form-control" type="text" placeholder="Estado" required pattern="[\s\S]{10,40}" data-tipo="estado">
-                                    <label class="input-label" for="state">Estado</label>
-                                    <!-- <span class="input-message-error">Este campo no es valido</span> -->
+                                    <!-- <div class="form-floating">
+                                        <input type="password" class="form-control" id="contrasenia" placeholder="Escriba su contraseña" required data-contrasenia/>
+                                        <label for="contrasenia">Escriba su contraseña</label>
+                                    </div> -->
+
                                 </div>
                             </fieldset>
                             <div id="liveAlertPlaceholder"></div>
-                            <input type="submit" class="form__submitLogin btn btn-primary" id="liveAlertBtn"
+                            <input type="submit" class="form__submitLogin btn btn-primary" id="liveAlertBtnRegister"
                                         value="Registrarse"/>
                             <h2 class="tituloLoginOpcion"> - O - </h2>
                             <a class="form__submitRegistro btn btn-dark" href="login.html" role="button">Inicio de sesion</a>
@@ -175,7 +145,7 @@
                             <div class="form__container">
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control" id="floatingInput" placeholder="Nombre"
-                                        required name="name" />
+                                        required name="name"/>
                                     <label for="floatingInput">Nombre</label>
                                 </div>
                                 <div class="form-floating">
@@ -217,6 +187,8 @@
         </div>
 
     </footer>
-    <script src="../js/coding.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../js/registro.js" type="module"></script>
 </body>
 </html>
