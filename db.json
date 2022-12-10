@@ -1,0 +1,34 @@
+{
+  "perfil": [
+    {
+      "nombre": "Jesus",
+      "email": "jesusrivetta@gmail.com",
+      "id": 1
+    },
+    {
+      "nombre": "Tomas",
+      "email": "totorivetta@gmail.com",
+      "id": "5c8e8d0d-4186-4df6-92ae-4951863efe63"
+    },
+    {
+      "nombre": "Tomas",
+      "email": "totorivetta@gmail",
+      "id": "431e2c61-9dc3-4f47-bfde-165b1ad165a2"
+    },
+    {
+      "nombre": "Tomas",
+      "email": "dfsfsfsdf@gmail.com",
+      "id": "eeb4102e-6a35-4aaa-ba87-204672a3690e"
+    }
+  ],
+  "productos": [
+    {
+      "img": "",
+      "categoria": "Guantes",
+      "nombreProducto": "sdasdsa",
+      "precio": "dsadsad",
+      "descripcion": "sdasdad",
+      "id": "be019bd2-9f0b-40e0-9feb-abd3277bc936"
+    }
+  ]
+}
