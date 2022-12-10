@@ -23,7 +23,9 @@
   ],
   "productos": [
     {
-      "img": "",
+      "img": "static/img/guantes/nike/nikeMercurial.webp",
+      "img2": "static/img/guantes/nike/nikeMercurial.webp",
+      "img3": "static/img/guantes/nike/nikeMercurial.webp",
       "categoria": "Guantes",
       "nombreProducto": "sdasdsa",
       "precio": "dsadsad",
