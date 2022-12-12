@@ -26,16 +26,5 @@
       "id": "82ba7485-6b67-46ad-a17f-f9fe4b43da69"
     }
   ],
-  "productos": [
-    {
-      "img": "https://media.solodeportes.com.ar/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/c/a/camiseta-de-boca-adidas-arquero-rosa-100020ga7548001-1.jpg",
-      "img2": "https://media.solodeportes.com.ar/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/c/a/camiseta-de-boca-adidas-arquero-rosa-100020ga7548001-1.jpg",
-      "img3": "https://media.solodeportes.com.ar/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/c/a/camiseta-de-boca-adidas-arquero-rosa-100020ga7548001-1.jpg",
-      "categoria": "ropa",
-      "nombreProducto": "Remera de arquero Rosi de boca",
-      "precio": "15000",
-      "descripcion": "Remera oficial de arquero boca Juniors",
-      "id": "87b601dc-2cd5-44bb-9361-3a7fd4e687b4"
-    }
-  ]
+  "productos": []
 }
