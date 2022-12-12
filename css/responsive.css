@@ -46,6 +46,14 @@
     .header--login{
         padding: 16px 7.5px;
     }
+
+    .container--titulo{
+        justify-content: center;
+    }
+
+    .titulo--seccion{
+        margin-bottom: 3%;
+    }
 }
 
 @media (max-width: 480px) {
