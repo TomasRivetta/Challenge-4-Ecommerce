@@ -10,6 +10,6 @@ formulario.addEventListener("submit",(evento) => {
     console.log(nombre," - ",email);
 
     clientServices.crearCliente(nombre,email).then(() => {
-        window.location.href = "/html/productos.html"
+        window.location.href = "https://tomasrivetta.github.io/Challenge-4-Ecommerce/html/productos.html"
     }).catch(err => console.log(err));
 });

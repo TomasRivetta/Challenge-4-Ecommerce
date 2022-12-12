@@ -9,9 +9,9 @@ formulario.addEventListener("submit",(evento) => {
 
     console.log(nombre," - ",email);
 
-    clientServices.login().then(() => {
-        if(nombre === login.nombre && email === login.email ){
-            window.location.href = "/html/productos.html"
+    clientServices.login(nombre,email).then(() => {
+        if(nombre === login.nombre1 && email === login.email ){
+            window.location.href = "https://tomasrivetta.github.io/Challenge-4-Ecommerce/html/productos.html"
         }
         else{
             alert("Error en nombre o mail");

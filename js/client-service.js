@@ -1,7 +1,15 @@
 
 
-const login = () => {
-    return fetch(`http://localhost:3000/perfil`).then((respuesta) => respuesta.json())
+const login = (nombre,email) => {
+    return fetch(`http://localhost:3000/perfil`,{
+        method: "GET",
+        headers: {
+            "Content-Type":"application/json"
+        },
+        body: JSON.stringify({
+            nombre,email, id:uuid.v4()
+        })
+    })
 };
 
 const mostrarProductos = () => fetch("http://localhost:3000/productos").then((respuesta) => respuesta.json());

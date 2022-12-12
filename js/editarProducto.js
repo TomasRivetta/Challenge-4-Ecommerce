@@ -59,6 +59,6 @@ formulario.addEventListener("submit", (evento) => {
     const descripcion = document.querySelector("[data-descripcion]").value;
 
     clientServices.actualizarProducto(img,img2,img3,categoria,nombreProducto,precio,descripcion,id).then(() => {
-        window.location.href = "../html/productos.html";
+        window.location.href = "https://tomasrivetta.github.io/Challenge-4-Ecommerce/html/productos.html";
     });
 });
