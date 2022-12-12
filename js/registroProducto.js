@@ -18,7 +18,7 @@ formulario.addEventListener("submit",(evento) => {
 
 
     console.log(categoria," - ",nombreProducto," - ",precio," - ",descripcion);
-
+    
     clientServices.crearProducto(img,img2,img3,categoria,nombreProducto,precio,descripcion).then(() => {
         window.location.href = "/html/productos.html"
     }).catch(err => console.log(err));

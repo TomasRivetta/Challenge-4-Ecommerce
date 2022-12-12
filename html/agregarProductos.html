@@ -83,17 +83,22 @@
 
                                     <div class="form__container">
 
-                                        <div class="mb-3">
-                                            <label for="formFileMultiple" class="form-label">Imagen 1 del producto</label>
-                                            <input class="form-control" type="file" id="formFileMultiple" multiple data-img>
+                                        <label for="basic-url" class="form-label">URL || Imagen 1 del producto</label>
+                                        <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon3">https://example.com/</span>
+                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" data-img>
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="imagen2" class="form-label">Imagen 2 del producto</label>
-                                            <input class="form-control" type="file" id="imagen2" multiple data-imgDos>
+
+                                        <label for="basic-urlDos" class="form-label">URL || Imagen 2 del producto</label>
+                                        <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon3">https://example.com/</span>
+                                        <input type="text" class="form-control" id="basic-urlDos" aria-describedby="basic-addon3" data-imgDos>
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="imagen3" class="form-label">Imagen 3 del producto</label>
-                                            <input class="form-control" type="file" id="imagen3" multiple data-imgTres>
+
+                                        <label for="basic-urlTres" class="form-label">URL || Imagen 3 del producto</label>
+                                        <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon3">https://example.com/</span>
+                                        <input type="text" class="form-control" id="basic-urlTres" aria-describedby="basic-addon3" data-imgTres>
                                         </div>
 
                                         <div>
@@ -126,7 +131,7 @@
 
                                 </fieldset>
                                 
-                                <button type="submit" class="btnCreate btn-primary btn" data-form-btn>
+                                <button type="submit" class="btnCreate btn-primary btn " data-form-btn>
                                     Agregar <i class="fas fa-plus-circle"></i>
                                 </button>
                             </form>

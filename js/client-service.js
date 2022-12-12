@@ -25,16 +25,21 @@ const crearProducto = (img,img2,img3,categoria,nombreProducto,precio,descripcion
     })
 }
 
-const  eliminarProducto = (id) => {
+const eliminarProducto = (id) => {
 
     return fetch(`http://localhost:3000/productos/${id}`,{
         method: "DELETE",
     });
+    
 };
+
+const login = () => fetch("http://localhost:3000/perfil").then((respuesta) => respuesta.json());
+
 
 export const clientServices = {
     crearCliente,
     crearProducto,
     mostrarProductos,
     eliminarProducto,
+    login,
 }

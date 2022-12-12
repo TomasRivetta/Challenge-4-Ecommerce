@@ -1,18 +1,18 @@
 import { clientServices } from "./client-service.js";
 
-const crearNuevaLinea = (img,img2,img3,categoria,nombreProducto,precio,descripcion,id) => {
+const crearNuevaLinea = (img,img2,img3,nombreProducto,precio,descripcion,id) => {
 
     const linea = document.createElement("div")
 
     const contenido = `
     <div class="card" style="width: 18rem">
-                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div id="carouselExampleDark${id}" class="carousel carousel-dark slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                <button type="button" data-bs-target="#carouselExampleDark${id}" data-bs-slide-to="0"
                                     class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                <button type="button" data-bs-target="#carouselExampleDark${id}" data-bs-slide-to="1"
                                     aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                <button type="button" data-bs-target="#carouselExampleDark${id}" data-bs-slide-to="2"
                                     aria-label="Slide 3"></button>
                             </div>
                             <div class="carousel-inner">
@@ -29,12 +29,12 @@ const crearNuevaLinea = (img,img2,img3,categoria,nombreProducto,precio,descripci
                                         alt="..." />
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark${id}"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previo</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark${id}"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Siguiente</span>
@@ -44,15 +44,18 @@ const crearNuevaLinea = (img,img2,img3,categoria,nombreProducto,precio,descripci
                             <h5 class="card-title producto-cuerpo__titulo">
                                 ${nombreProducto}
                             </h5>
-                            <p class="card-text producto-cuerpo__precio">${precio}</p>
+                            <p class="card-text producto-cuerpo__precio">$${precio}</p>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary botonProductos" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                                data-bs-target="#exampleModal${id}">
                                 Ver Producto
                             </button>
+                            <button class="btn btn-danger botonProductos" name="botonEliminar" type="button" id="${id}">Eliminar</button>
+                            
+                            <button class="btn btn-dark botonProductos" name="botonEditar" type="button" id="${id}">Editar </button>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            <div class="modal fade" id="exampleModal${id}" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
@@ -81,13 +84,13 @@ const crearNuevaLinea = (img,img2,img3,categoria,nombreProducto,precio,descripci
     linea.innerHTML = contenido
 
     //ELIMINAR PRODUCTO
-    // const btn = linea.querySelector("button");
-    // btn.addEventListener("click", () => {
-    //     const id = btn.id
-    //     clientServices.eliminarProducto(id).then( (respuesta) => {
-    //         console.log(respuesta)
-    //     }).catch((err) => alert("Ocurrio un error"));
-    // });
+    const btn = linea.querySelector('[name="botonEliminar"]');
+    btn.addEventListener("click", () => {
+        const id = btn.id
+        clientServices.eliminarProducto(id).then( (respuesta) => {
+            console.log(respuesta)
+        }).catch((err) => alert("Ocurrio un error"));
+    });
 
     return linea
 

@@ -1,16 +1,6 @@
 {
   "perfil": [
     {
-      "nombre": "Jesus",
-      "email": "jesusrivetta@gmail.com",
-      "id": 1
-    },
-    {
-      "nombre": "Tomas",
-      "email": "totorivetta@gmail.com",
-      "id": "5c8e8d0d-4186-4df6-92ae-4951863efe63"
-    },
-    {
       "nombre": "Tomas",
       "email": "totorivetta@gmail",
       "id": "431e2c61-9dc3-4f47-bfde-165b1ad165a2"
@@ -19,18 +9,33 @@
       "nombre": "Tomas",
       "email": "dfsfsfsdf@gmail.com",
       "id": "eeb4102e-6a35-4aaa-ba87-204672a3690e"
+    },
+    {
+      "nombre": "Toto",
+      "email": "totorivetta@gmail.com",
+      "id": "3c229b94-c8b0-4177-ba99-4a179c0374a7"
+    },
+    {
+      "nombre": "Toto",
+      "email": "totorivetta@gmail.com",
+      "id": "1ef3adaf-f141-4f2b-84db-56813501870e"
+    },
+    {
+      "nombre": "Cesar",
+      "email": "fsdfs@gmail.com",
+      "id": "82ba7485-6b67-46ad-a17f-f9fe4b43da69"
     }
   ],
   "productos": [
     {
-      "img": "static/img/guantes/nike/nikeMercurial.webp",
-      "img2": "static/img/guantes/nike/nikeMercurial.webp",
-      "img3": "static/img/guantes/nike/nikeMercurial.webp",
-      "categoria": "Guantes",
-      "nombreProducto": "sdasdsa",
-      "precio": "dsadsad",
-      "descripcion": "sdasdad",
-      "id": "be019bd2-9f0b-40e0-9feb-abd3277bc936"
+      "img": "https://media.solodeportes.com.ar/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/c/a/camiseta-de-boca-adidas-arquero-rosa-100020ga7548001-1.jpg",
+      "img2": "https://media.solodeportes.com.ar/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/c/a/camiseta-de-boca-adidas-arquero-rosa-100020ga7548001-1.jpg",
+      "img3": "https://media.solodeportes.com.ar/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/c/a/camiseta-de-boca-adidas-arquero-rosa-100020ga7548001-1.jpg",
+      "categoria": "ropa",
+      "nombreProducto": "Remera de arquero Rosi de boca",
+      "precio": "15000",
+      "descripcion": "Remera oficial de arquero boca Juniors",
+      "id": "87b601dc-2cd5-44bb-9361-3a7fd4e687b4"
     }
   ]
 }
