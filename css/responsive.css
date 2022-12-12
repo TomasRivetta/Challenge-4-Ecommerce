@@ -4,6 +4,13 @@
 @media (max-width: 950px) {
 }
 
+@media (max-width: 860px) {
+
+    .header--login{
+        padding: 16px 30px;
+    }
+}
+
 @media (max-width: 768px) {
 
     .banner-titulo{
@@ -23,7 +30,22 @@
     }
 }
 
+@media (max-width: 680px) {
+
+    .header--login{
+        padding: 16px 15px;
+    }
+
+}
+
 @media (max-width: 675px) {
+}
+
+@media (max-width: 590px) {
+
+    .header--login{
+        padding: 16px 7.5px;
+    }
 }
 
 @media (max-width: 480px) {
