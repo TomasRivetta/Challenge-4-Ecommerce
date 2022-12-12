@@ -72,6 +72,83 @@
     <main>
 
         <section>
+
+            <section>
+                <div class="formulario">
+    
+                    <div class="container--formulario-login">
+    
+                        <h5 class="tituloLogin">Editar producto</h5>
+            
+                        <div class="contacto__formulario--container--Login">
+                            <!-- <h2 class="card__title">Completa tu registro</h2> -->
+                            <form action=""
+                                class="form" data-form>
+                                <fieldset>
+
+                                    <div class="form__container">
+
+                                        <label for="basic-url" class="form-label">URL || Imagen 1 del producto</label>
+                                        <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon3">https://example.com/</span>
+                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" data-img>
+                                        </div>
+
+                                        <label for="basic-urlDos" class="form-label">URL || Imagen 2 del producto</label>
+                                        <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon3">https://example.com/</span>
+                                        <input type="text" class="form-control" id="basic-urlDos" aria-describedby="basic-addon3" data-imgDos>
+                                        </div>
+
+                                        <label for="basic-urlTres" class="form-label">URL || Imagen 3 del producto</label>
+                                        <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon3">https://example.com/</span>
+                                        <input type="text" class="form-control" id="basic-urlTres" aria-describedby="basic-addon3" data-imgTres>
+                                        </div>
+
+                                        <div>
+
+                                            <select class="form-select" aria-label="Default select example" data-categoria>
+                                                <option selected>Categoria</option>
+                                                <option value="Guantes">Guantes</option>
+                                                <option value="ropa">Pantalones | Buzos | Remeras</option>
+                                                <option value="accesorios">Accesorios</option>
+                                            </select>
+
+                                        </div>
+
+                                        <div class="form-floating mb-3 container__nombre--Producto">
+                                            <input type="text" class="form-control" placeholder="Nombre del producto" required name="name" id="name" data-form-input maxlength="30"/>
+                                            <label for="name">Nombre del producto</label>
+                                        </div>
+
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" placeholder="Precio del producto" required name="precio" id="precio" data-precio/>
+                                            <label for="precio">Precio del producto</label>
+                                        </div>
+
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descripcion del producto" data-descripcion></textarea>
+                                            <label for="exampleFormControlTextarea1" class="form-label">Descripcion del producto</label>
+                                        </div>
+                                        
+                                    </div>
+
+                                </fieldset>
+                                
+                                <button type="submit" class="btn btn-primary form__submitEdit" data-form-btn>
+                                    Editar Producto <i class="fas fa-plus-circle"></i>
+                                </button>
+                            </form>
+                        </div>
+    
+                    </div>
+                </div>
+            </section>
+            
+        </section>
+
+        <section>
             <div class="container__informacion">
                 <div class="container__informacion--logo--info">
                     <img class="container__informacion--logo" src="../static/logo.png" />
@@ -150,6 +227,8 @@
             </div>
         </div>
     </footer>
+
+    <script type="module" src="../js/editarProducto.js"></script>
     
 </body>
 </html>

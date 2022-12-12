@@ -10,11 +10,12 @@ formulario.addEventListener("submit",(evento) => {
     console.log(nombre," - ",email);
 
     clientServices.login().then(() => {
-        if(nombre === "Toto" && email === "totorivetta@gmail.com" ){
+        if(nombre === login.nombre && email === login.email ){
             window.location.href = "/html/productos.html"
         }
         else{
             alert("Error en nombre o mail");
         }
     }).catch(err => console.log(err));
+
 });

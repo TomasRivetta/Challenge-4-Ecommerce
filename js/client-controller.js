@@ -52,7 +52,7 @@ const crearNuevaLinea = (img,img2,img3,nombreProducto,precio,descripcion,id) => 
                             </button>
                             <button class="btn btn-danger botonProductos" name="botonEliminar" type="button" id="${id}">Eliminar</button>
                             
-                            <button class="btn btn-dark botonProductos" name="botonEditar" type="button" id="${id}">Editar </button>
+                            <a href="../html/editarProductos.html?id=${id}"><button class="btn btn-dark botonProductos" name="botonEditar" type="button" id="${id}">Editar </button></a>
 
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModal${id}" tabindex="-1" aria-labelledby="exampleModalLabel"
