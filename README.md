@@ -30,3 +30,4 @@ Es muy importante que el sitio sea adaptable para que los clientes puedan compra
 <hr>
 
 ### Insignia:
+![insigniaChallengueEcommerc](https://user-images.githubusercontent.com/109299616/207704464-745196ce-385e-4ad4-8c63-370b95346a0b.png)
