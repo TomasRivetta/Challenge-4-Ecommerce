@@ -18,12 +18,13 @@ formulario.addEventListener("submit",(evento) => {
                 window.location.href = "https://tomasrivetta.github.io/Challenge-4-Ecommerce/html/productos.html"
             }
             else{
-                alert("ERROR EN NOMBRE O EMAIL");
+                alert("Error en nombre o email");
+                window.location.href = "https://tomasrivetta.github.io/Challenge-4-Ecommerce/index.html"
             }
             // console.log(element.nombre)
             // console.log(element.email)
+
         });
         // console.log(data)
-    }).catch((error) => alert("Ocurrio un error en la base de datos"));
-
+    }).catch((error) => alert("Ocurrio un error en la base de datos")); 
 });

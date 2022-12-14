@@ -2,6 +2,9 @@
 
 const login = () => fetch("http://localhost:3000/perfil").then((respuesta) => respuesta.json());
 
+const registroCliente = () => fetch("http://localhost:3000/perfil").then((respuesta) => respuesta.json());
+
+
 const mostrarProductos = () => fetch("http://localhost:3000/productos").then((respuesta) => respuesta.json());
 
 const crearCliente = (nombre,email) => {
@@ -59,6 +62,7 @@ export const clientServices = {
     mostrarProductos,
     eliminarProducto,
     login,
+    registroCliente,
     detalleProducto,
     actualizarProducto,
 }
