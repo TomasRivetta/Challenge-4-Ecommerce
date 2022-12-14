@@ -18,7 +18,7 @@ formulario.addEventListener("submit",(evento) => {
                 window.location.href = "https://tomasrivetta.github.io/Challenge-4-Ecommerce/html/productos.html"
             }
             else{
-                alert("Error en nombre o email");
+                alert("Buscando cuenta...")
                 window.location.href = "https://tomasrivetta.github.io/Challenge-4-Ecommerce/index.html"
             }
             // console.log(element.nombre)
