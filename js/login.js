@@ -9,13 +9,21 @@ formulario.addEventListener("submit",(evento) => {
 
     console.log(nombre," - ",email);
 
-    clientServices.login(nombre,email).then(() => {
-        if(nombre === login.nombre1 && email === login.email ){
-            window.location.href = "https://tomasrivetta.github.io/Challenge-4-Ecommerce/html/productos.html"
-        }
-        else{
-            alert("Error en nombre o mail");
-        }
-    }).catch(err => console.log(err));
+    console.log(clientServices.login())
+
+    clientServices.login().then((data) => {
+        data.forEach(element => {
+
+            if(nombre === element.nombre && email === element.email){
+                window.location.href = "https://tomasrivetta.github.io/Challenge-4-Ecommerce/html/productos.html"
+            }
+            else{
+                alert("ERROR EN NOMBRE O EMAIL");
+            }
+            // console.log(element.nombre)
+            // console.log(element.email)
+        });
+        // console.log(data)
+    }).catch((error) => alert("Ocurrio un error en la base de datos"));
 
 });
